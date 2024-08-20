@@ -35,6 +35,7 @@ RUN \
 
 # add local files
 COPY /root /
+RUN chmod +x /bin/*
 
 EXPOSE 2222
 

@@ -15,7 +15,7 @@ RUN \
     logrotate \
     nano \
     netcat-openbsd \
-    sudo curl borgbackup pwgen && \
+    sudo curl borgbackup && \
   echo "**** install openssh-server ****" && \
   if [ -z ${OPENSSH_RELEASE+x} ]; then \
     OPENSSH_RELEASE=$(curl -sL "http://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/APKINDEX.tar.gz" | tar -xz -C /tmp && \
